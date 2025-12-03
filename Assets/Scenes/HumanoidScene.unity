@@ -1008,6 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1359990789}
+  audioClip: {fileID: 8300000, guid: aa6f6e0d32026c44084f5ca83074e743, type: 3}
   phonemeController: {fileID: 320629723}
   animancer: {fileID: 859044614}
   idleClip: {fileID: 7400000, guid: 9bcd29a64aee95e438f923048eaec8ce, type: 2}

@@ -38,14 +38,16 @@ public class LipSyncPlayer : MonoBehaviour
 
     public void Play(LipSyncClip clip)
     {
-        if (clip == null || clip.audio == null || clip.keys == null || clip.keys.Length == 0)
+        if (clip == null || clip.keys == null || clip.keys.Length == 0)
         {
-            Debug.LogWarning("LipSyncPlayer: Invalid clip.");
-            return;
+            Debug.LogWarning("LipSyncPlayer: Invalid clip. - "+
+                (clip == null ? "Clip is null" : 
+                (clip.keys == null || clip.keys.Length == 0 ? " Keys are null or empty." : "")));
+            // return;
         }
 
         // start audio
-        audioSource.clip = clip.audio;
+        audioSource.clip = clip.audioClip;
         audioSource.Play();
 
         // reset phoneme sequence
@@ -76,7 +78,7 @@ public class LipSyncPlayer : MonoBehaviour
             _keyIndex++;
         }
 
-        if (!audioSource.isPlaying && t > reactionLipSyncClip.audio.length)
+        if (!audioSource.isPlaying && t > reactionLipSyncClip.audioClip.length)
         {
             _isPlaying = false;
 

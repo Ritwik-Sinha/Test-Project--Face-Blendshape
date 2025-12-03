@@ -19,7 +19,6 @@ public class PhonemeKeyData
 [CreateAssetMenu(fileName = "NewLipSyncClip", menuName = "LipSync/Clip")]
 public class LipSyncClip : ScriptableObject
 {
-    public AudioClip audio;
-    public TextAsset jsonFile;
+    public AudioClip audioClip;
     public PhonemeKey[] keys;
 }

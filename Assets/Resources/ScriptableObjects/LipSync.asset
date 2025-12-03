@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: NewLipSyncClip
-  m_EditorClassIdentifier: Assembly-CSharp::LipSyncClip
-  audio: {fileID: 8300000, guid: aa6f6e0d32026c44084f5ca83074e743, type: 3}
-  jsonFile: {fileID: 4900000, guid: c5f88c10cb0f8434c930dc09a5365a26, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c6aa9d1da49ddb4db54e204ddbd17cc, type: 3}
+  m_Name: LipSync
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: aa6f6e0d32026c44084f5ca83074e743, type: 3}
   keys:
   - time: 0
     phoneme: 2

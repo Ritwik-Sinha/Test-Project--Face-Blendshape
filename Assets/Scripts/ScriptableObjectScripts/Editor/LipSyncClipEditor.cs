@@ -7,6 +7,8 @@ using UnityEngine;
 [CustomEditor(typeof(LipSyncClip))]
 public class LipSyncClipEditor : Editor
 {
+    private TextAsset jsonFile; // Editor-only, not serialized in the asset
+
     public override void OnInspectorGUI()
     {
         // Draw the default inspector
@@ -16,17 +18,21 @@ public class LipSyncClipEditor : Editor
 
         // Add some space
         EditorGUILayout.Space(10);
+        
+        // Editor-only JSON file field
+        EditorGUILayout.LabelField("Load Keys from JSON", EditorStyles.boldLabel);
+        jsonFile = (TextAsset)EditorGUILayout.ObjectField("JSON File", jsonFile, typeof(TextAsset), false);
 
         // Add a button to load keys from JSON
         if (GUILayout.Button("Load Keys from JSON", GUILayout.Height(30)))
         {
-            if (lipSyncClip.jsonFile == null)
+            if (jsonFile == null)
             {
                 EditorUtility.DisplayDialog("Error", "Please assign a JSON file first!", "OK");
             }
             else
             {
-                LoadKeysFromJsonFile(lipSyncClip);
+                LoadKeysFromJson(lipSyncClip, jsonFile);
                 EditorUtility.SetDirty(lipSyncClip);
                 AssetDatabase.SaveAssets();
             }
@@ -37,66 +43,6 @@ public class LipSyncClipEditor : Editor
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.HelpBox($"Current Keys Count: {lipSyncClip.keys.Length}", MessageType.Info);
-        }
-    }
-
-    private void LoadKeysFromJsonFile(LipSyncClip lipSyncClip)
-    {
-        if (lipSyncClip.jsonFile == null)
-        {
-            Debug.LogError("JSON file is not assigned in the ScriptableObject");
-            return;
-        }
-
-        LoadKeysFromJson(lipSyncClip, lipSyncClip.jsonFile);
-    }
-
-    /// <summary>
-    /// Load phoneme keys from a JSON file
-    /// </summary>
-    /// <param name="lipSyncClip">The LipSyncClip to load keys into</param>
-    /// <param name="jsonFilePath">Path to the JSON file (relative to Resources folder or absolute path)</param>
-    private void LoadKeysFromJson(LipSyncClip lipSyncClip, string jsonFilePath)
-    {
-        try
-        {
-            string jsonContent;
-            
-            // Try loading from Resources folder first
-            TextAsset jsonAsset = Resources.Load<TextAsset>(jsonFilePath);
-            if (jsonAsset != null)
-            {
-                jsonContent = jsonAsset.text;
-            }
-            else
-            {
-                // Try loading from absolute path
-                if (System.IO.File.Exists(jsonFilePath))
-                {
-                    jsonContent = System.IO.File.ReadAllText(jsonFilePath);
-                }
-                else
-                {
-                    Debug.LogError($"JSON file not found at path: {jsonFilePath}");
-                    return;
-                }
-            }
-
-            PhonemeKeyData data = JsonUtility.FromJson<PhonemeKeyData>(jsonContent);
-            if (data != null && data.keys != null)
-            {
-                lipSyncClip.keys = data.keys.ToArray();
-                Debug.Log($"Successfully loaded {lipSyncClip.keys.Length} phoneme keys from JSON");
-                EditorUtility.SetDirty(lipSyncClip);
-            }
-            else
-            {
-                Debug.LogError("Failed to parse JSON or no keys found");
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"Error loading keys from JSON: {e.Message}");
         }
     }
 
