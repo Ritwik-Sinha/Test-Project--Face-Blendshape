@@ -1,0 +1,106 @@
+{
+  "keys": [
+    { "time": 0.00, "phoneme": 2 },
+    { "time": 0.18, "phoneme": 1 },
+    { "time": 0.35, "phoneme": 0 },
+
+    { "time": 0.45, "phoneme": 1 },
+    { "time": 0.62, "phoneme": 2 },
+
+    { "time": 0.75, "phoneme": 2 },
+    { "time": 0.95, "phoneme": 2 },
+    { "time": 1.10, "phoneme": 4 },
+    { "time": 1.25, "phoneme": 0 },
+
+    { "time": 1.40, "phoneme": 1 },
+    { "time": 1.55, "phoneme": 0 },
+
+    { "time": 1.65, "phoneme": 5 },
+    { "time": 1.80, "phoneme": 1 },
+
+    { "time": 1.95, "phoneme": 4 },
+    { "time": 2.20, "phoneme": 2 },
+
+    { "time": 2.45, "phoneme": 1 },
+    { "time": 2.55, "phoneme": 0 },
+
+    { "time": 2.62, "phoneme": 4 },
+    { "time": 2.82, "phoneme": 2 },
+    { "time": 3.00, "phoneme": 0 },
+
+    { "time": 3.10, "phoneme": 3 },
+    { "time": 3.30, "phoneme": 2 },
+    { "time": 3.55, "phoneme": 4 },
+
+    { "time": 3.80, "phoneme": 1 },
+    { "time": 4.05, "phoneme": 4 },
+    { "time": 4.30, "phoneme": 0 },
+
+    { "time": 4.50, "phoneme": 5 },
+    { "time": 4.65, "phoneme": 1 },
+
+    { "time": 4.80, "phoneme": 2 },
+    { "time": 5.00, "phoneme": 4 },
+    { "time": 5.25, "phoneme": 2 },
+    { "time": 5.45, "phoneme": 4 },
+
+    { "time": 5.70, "phoneme": 1 },
+    { "time": 5.90, "phoneme": 0 },
+
+    { "time": 6.00, "phoneme": 3 },
+    { "time": 6.20, "phoneme": 5 },
+
+    { "time": 6.40, "phoneme": 5 },
+    { "time": 6.70, "phoneme": 5 },
+
+    { "time": 6.90, "phoneme": 1 },
+    { "time": 7.10, "phoneme": 0 },
+
+    { "time": 7.30, "phoneme": 1 },
+    { "time": 7.50, "phoneme": 5 },
+    { "time": 7.75, "phoneme": 5 },
+    { "time": 8.00, "phoneme": 0 },
+
+    { "time": 8.10, "phoneme": 1 },
+    { "time": 8.25, "phoneme": 0 },
+
+    { "time": 8.32, "phoneme": 2 },
+    { "time": 8.52, "phoneme": 1 },
+    { "time": 8.70, "phoneme": 4 },
+
+    { "time": 9.00, "phoneme": 3 },
+    { "time": 9.12, "phoneme": 5 },
+    { "time": 9.28, "phoneme": 5 },
+
+    { "time": 9.50, "phoneme": 4 },
+    { "time": 9.75, "phoneme": 2 },
+
+    { "time": 10.00, "phoneme": 3 },
+    { "time": 10.20, "phoneme": 5 },
+    { "time": 10.40, "phoneme": 5 },
+
+    { "time": 10.60, "phoneme": 4 },
+    { "time": 10.85, "phoneme": 4 },
+    { "time": 11.10, "phoneme": 2 },
+    { "time": 11.30, "phoneme": 1 },
+
+    { "time": 11.55, "phoneme": 1 },
+    { "time": 11.70, "phoneme": 0 },
+
+    { "time": 11.80, "phoneme": 4 },
+    { "time": 12.00, "phoneme": 2 },
+    { "time": 12.25, "phoneme": 3 },
+    { "time": 12.45, "phoneme": 4 },
+    { "time": 12.70, "phoneme": 2 },
+
+    { "time": 12.95, "phoneme": 1 },
+    { "time": 13.10, "phoneme": 2 },
+    { "time": 13.25, "phoneme": 0 },
+
+    { "time": 13.35, "phoneme": 5 },
+    { "time": 13.60, "phoneme": 5 },
+    { "time": 13.90, "phoneme": 2 },
+
+    { "time": 14.10, "phoneme": 0 }
+  ]
+}

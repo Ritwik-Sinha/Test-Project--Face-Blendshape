@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: MouthLipSync
+  m_EditorClassIdentifier: Assembly-CSharp::LipSyncClip
+  audio: {fileID: 8300000, guid: aa6f6e0d32026c44084f5ca83074e743, type: 3}
+  jsonFile: {fileID: 4900000, guid: c5f88c10cb0f8434c930dc09a5365a26, type: 3}
+  keys:
+  - time: 0
+    phoneme: 2
+  - time: 0.18
+    phoneme: 1
+  - time: 0.35
+    phoneme: 0
+  - time: 0.45
+    phoneme: 1
+  - time: 0.62
+    phoneme: 2
+  - time: 0.75
+    phoneme: 2
+  - time: 0.95
+    phoneme: 2
+  - time: 1.1
+    phoneme: 4
+  - time: 1.25
+    phoneme: 0
+  - time: 1.4
+    phoneme: 1
+  - time: 1.55
+    phoneme: 0
+  - time: 1.65
+    phoneme: 5
+  - time: 1.8
+    phoneme: 1
+  - time: 1.95
+    phoneme: 4
+  - time: 2.2
+    phoneme: 2
+  - time: 2.45
+    phoneme: 1
+  - time: 2.55
+    phoneme: 0
+  - time: 2.62
+    phoneme: 4
+  - time: 2.82
+    phoneme: 2
+  - time: 3
+    phoneme: 0
+  - time: 3.1
+    phoneme: 3
+  - time: 3.3
+    phoneme: 2
+  - time: 3.55
+    phoneme: 4
+  - time: 3.8
+    phoneme: 1
+  - time: 4.05
+    phoneme: 4
+  - time: 4.3
+    phoneme: 0
+  - time: 4.5
+    phoneme: 5
+  - time: 4.65
+    phoneme: 1
+  - time: 4.8
+    phoneme: 2
+  - time: 5
+    phoneme: 4
+  - time: 5.25
+    phoneme: 2
+  - time: 5.45
+    phoneme: 4
+  - time: 5.7
+    phoneme: 1
+  - time: 5.9
+    phoneme: 0
+  - time: 6
+    phoneme: 3
+  - time: 6.2
+    phoneme: 5
+  - time: 6.4
+    phoneme: 5
+  - time: 6.7
+    phoneme: 5
+  - time: 6.9
+    phoneme: 1
+  - time: 7.1
+    phoneme: 0
+  - time: 7.3
+    phoneme: 1
+  - time: 7.5
+    phoneme: 5
+  - time: 7.75
+    phoneme: 5
+  - time: 8
+    phoneme: 0
+  - time: 8.1
+    phoneme: 1
+  - time: 8.25
+    phoneme: 0
+  - time: 8.32
+    phoneme: 2
+  - time: 8.52
+    phoneme: 1
+  - time: 8.7
+    phoneme: 4
+  - time: 9
+    phoneme: 3
+  - time: 9.12
+    phoneme: 5
+  - time: 9.28
+    phoneme: 5
+  - time: 9.5
+    phoneme: 4
+  - time: 9.75
+    phoneme: 2
+  - time: 10
+    phoneme: 3
+  - time: 10.2
+    phoneme: 5
+  - time: 10.4
+    phoneme: 5
+  - time: 10.6
+    phoneme: 4
+  - time: 10.85
+    phoneme: 4
+  - time: 11.1
+    phoneme: 2
+  - time: 11.3
+    phoneme: 1
+  - time: 11.55
+    phoneme: 1
+  - time: 11.7
+    phoneme: 0
+  - time: 11.8
+    phoneme: 4
+  - time: 12
+    phoneme: 2
+  - time: 12.25
+    phoneme: 3
+  - time: 12.45
+    phoneme: 4
+  - time: 12.7
+    phoneme: 2
+  - time: 12.95
+    phoneme: 1
+  - time: 13.1
+    phoneme: 2
+  - time: 13.25
+    phoneme: 0
+  - time: 13.35
+    phoneme: 5
+  - time: 13.6
+    phoneme: 5
+  - time: 13.9
+    phoneme: 2
+  - time: 14.1
+    phoneme: 0
