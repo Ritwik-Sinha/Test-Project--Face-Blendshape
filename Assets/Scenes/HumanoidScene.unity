@@ -1011,7 +1011,7 @@ MonoBehaviour:
   phonemeController: {fileID: 320629723}
   animancer: {fileID: 859044614}
   idleClip: {fileID: 7400000, guid: 9bcd29a64aee95e438f923048eaec8ce, type: 2}
-  reactionLipSyncClip: {fileID: 11400000, guid: 94fe508d7bb7fce429d460fab67cb91a, type: 2}
+  reactionLipSyncClip: {fileID: 11400000, guid: e3ad9ab16f4e8f840b1f5809014a17ef, type: 2}
 --- !u!82 &1359990789
 AudioSource:
   m_ObjectHideFlags: 0
